@@ -15,6 +15,8 @@ TO START: json-server --watch db.json
 
 After firing up your server, render the list of pizzas in to the table.
 
+You can do it!
+
 Each row in the table should be a pizza component and when you click the "Edit" button, it should send the pizza associated with that component into the Pizza form.
 
 The pizza form will then render the information about the pizza in the form, which will be editable.
