@@ -1,6 +1,9 @@
 import React from "react"
 
-const Pizza = () => {
+const Pizza = (props) => {
+  let handleClick = () => {
+    
+  }
   return(
     <tr>
       <td>{"Replace Me With Pizza Topping"}</td>
