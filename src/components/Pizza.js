@@ -2,7 +2,7 @@ import React from "react"
 
 const Pizza = (props) => {
   let handleClick = () => {
-    
+    props.selectPizza(props.singlePizza)
   }
   return(
     <tr>
