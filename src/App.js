@@ -13,6 +13,16 @@ class App extends Component {
     .then((res) => res.json())
     .then((pizzas) => this.setState({ pizzas }))
   }
+
+  selectPizza = (singlePizza) => {
+    this.setState(
+      {
+        selectedPizza: singlePizza
+      },
+      () => console.log(this.state)
+    )
+  }
+
   render() {
     return (
       <Fragment>
