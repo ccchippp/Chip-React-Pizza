@@ -3,6 +3,11 @@ import Header from './components/Header'
 import PizzaForm from './components/PizzaForm'
 import PizzaList from './containers/PizzaList'
 class App extends Component {
+  state = {
+    pizzas = [],
+    selectedPizza = {}
+  }
+
   render() {
     return (
       <Fragment>
