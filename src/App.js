@@ -8,6 +8,11 @@ class App extends Component {
     selectedPizza = {}
   }
 
+  componentDidMount()  {
+    fetch('https://localhost3000/pizzas')
+    .then((res) => res.json())
+    .then((pizzas) => this.setState({ pizzas }))
+  }
   render() {
     return (
       <Fragment>
