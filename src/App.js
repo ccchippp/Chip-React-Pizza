@@ -4,8 +4,8 @@ import PizzaForm from './components/PizzaForm'
 import PizzaList from './containers/PizzaList'
 class App extends Component {
   state = {
-    pizzas = [],
-    selectedPizza = {}
+    pizzas: [],
+    selectedPizza: {}
   }
 
   componentDidMount()  {
