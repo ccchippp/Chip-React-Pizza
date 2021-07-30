@@ -24,7 +24,7 @@ class App extends Component {
   }
 
   handleSubmit = () => {
-
+    console.log('submitted')
   }
 
   handleChange = (e) => {
