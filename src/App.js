@@ -25,6 +25,7 @@ class App extends Component {
 
   handleSubmit = () => {
     console.log('submitted')
+
   }
 
   handleChange = (e) => {
@@ -41,8 +42,14 @@ class App extends Component {
     return (
       <Fragment>
         <Header/>
-        <PizzaForm/>
-        <PizzaList/>
+        <PizzaForm
+          handleSubmit={this.handleSubmit}
+          handleChange={this.handleChange}
+        />
+        <PizzaList
+          allPizzas={this.state.pizzas}
+          selectPizza={this.state.selectPizza}
+        />
       </Fragment>
     );
   }
