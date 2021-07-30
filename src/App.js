@@ -23,11 +23,16 @@ class App extends Component {
     )
   }
 
+  handleSubmit = () => {
+
+  }
+
   handleChange = (e) => {
     console.log(e.target.name, e.target.value)
     this.setState({
       selectedPizza: {
-        
+        ...this.state.selectedPizza,
+        [e.target.name]: e.target.value
       }
     })
   }
