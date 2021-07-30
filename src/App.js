@@ -23,6 +23,15 @@ class App extends Component {
     )
   }
 
+  handleChange = (e) => {
+    console.log(e.target.name, e.target.value)
+    this.setState({
+      selectedPizza: {
+        
+      }
+    })
+  }
+
   render() {
     return (
       <Fragment>
