@@ -29,7 +29,10 @@ class PizzaForm extends React.Component {
                 />
           </div>
           <div className="col">
-            <select value={this.state} className="form-control">
+            <select value={this.state.formPizza.size} 
+                onChange={this.handleChange}
+                className="form-control"
+                >
               <option value="Small">Small</option>
               <option value="Medium">Medium</option>
               <option value="Large">Large</option>
@@ -37,13 +40,23 @@ class PizzaForm extends React.Component {
           </div>
           <div className="col">
             <div className="form-check">
-              <input className="form-check-input" type="radio" value="Vegetarian" checked={null}/>
+              <input 
+                className="form-check-input" 
+                type="radio" 
+                value="Vegetarian" 
+                checked={null}
+                onChange={this.handleRadio}/>
               <label className="form-check-label">
                 Vegetarian
               </label>
             </div>
             <div className="form-check">
-              <input className="form-check-input" type="radio" value="Not Vegetarian" checked={null}/>
+              <input 
+                className="form-check-input" 
+                type="radio" 
+                value="Not Vegetarian" 
+                checked={null}
+                onChange={this.handleRadio}/>
               <label className="form-check-label">
                 Not Vegetarian
               </label>
