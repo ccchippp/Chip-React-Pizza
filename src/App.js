@@ -25,7 +25,7 @@ class App extends Component {
 
   handleSubmit = () => {
     console.log('submitted')
-
+    // more to add, just testing now
   }
 
   handleChange = (e) => {
