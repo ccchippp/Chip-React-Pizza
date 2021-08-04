@@ -24,9 +24,11 @@ class App extends Component {
   }
 
   handleSubmit = () => {
-    console.log('submitted')
-    // more to add, just testing now
-  }
+    console.log("working");
+    this.setState({
+      pizzas: this.state.pizzas.map(pizza => 
+        pizza.id === this.state.selectedPizza.id ? this.state.selectedPizza : pizza)
+    })
 
   handleChange = (e) => {
     console.log(e.target.name, e.target.value)
