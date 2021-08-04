@@ -63,7 +63,11 @@ class PizzaForm extends React.Component {
             </div>
           </div>
           <div className="col">
-            <button type="submit" className="btn btn-success" onClick={console.log}>Submit</button>
+            <button 
+              type="submit" 
+              className="btn btn-success" 
+              onClick={this.props.handleSubmit}>Submit
+            </button>
           </div>
         </div>
     )
