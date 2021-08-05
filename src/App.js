@@ -40,6 +40,15 @@ class App extends Component {
     })
   }
 
+  toggleVeg = () => {
+    this.setState({
+      selectedPizza: {
+        ...this.state.selectedPizza,
+        vegetarian: !this.state.selectedPizza.vegetarian
+      }
+    })
+  }
+
   render() {
     return (
       <Fragment>
