@@ -56,6 +56,7 @@ class App extends Component {
         <PizzaForm
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}
+          toggleVeg={this.toggleVeg}
         />
         <PizzaList
           allPizzas={this.state.pizzas}

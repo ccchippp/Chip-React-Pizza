@@ -45,7 +45,7 @@ class PizzaForm extends React.Component {
                 type="radio" 
                 value="Vegetarian" 
                 checked={null}
-                onChange={this.handleRadio}/>
+                onChange={this.toggleVeg}/>
               <label className="form-check-label">
                 Vegetarian
               </label>
@@ -56,7 +56,7 @@ class PizzaForm extends React.Component {
                 type="radio" 
                 value="Not Vegetarian" 
                 checked={null}
-                onChange={this.handleRadio}/>
+                onChange={this.toggleVeg}/>
               <label className="form-check-label">
                 Not Vegetarian
               </label>
